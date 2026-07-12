@@ -46,9 +46,9 @@ namespace enigma_user {
     return result;
   }
 
-  int show_message(std::string message) {
+  int show_message(std::string str) {
     enigma::widget_system_initialize();
-    return ::show_message(message.c_str());
+    return ::show_message(str.c_str());
   }
 
   int show_message_cancelable(std::string str) {
