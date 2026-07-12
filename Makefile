@@ -15,6 +15,7 @@ ifeq ($(UNIX_BASED), true)
 			override LDFLAGS += -lX11 -lpthread -lc -lkvm
 			override LDLIBS += -lX11 -lpthread -lc -lkvm
 		endif
+	endif
 else
 	override LDFLAGS += -lntdll -lgdiplus -lcomctl32 -lshlwapi -lcomdlg32 -lole32 -loleaut32 -luuid
 	override LDLIBS += -lntdll -lgdiplus -lcomctl32 -lshlwapi -lcomdlg32 -lole32 -loleaut32 -luuid
