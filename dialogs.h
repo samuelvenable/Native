@@ -19,9 +19,7 @@ namespace enigma_user {
   int show_question(std::string str);
   int show_question_cancelable(std::string str);
   int show_attempt(std::string str);
-  std::string get_string(std::string str, std::string def);
   std::string get_password(std::string str, std::string def);
-  double get_integer(std::string str, double def);
   double get_passcode(std::string str, double def);
   std::string get_open_filename(std::string filter, std::string fname);
   std::string get_open_filename_ext(std::string filter, std::string fname, std::string dir, std::string title);
