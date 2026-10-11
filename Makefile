@@ -11,11 +11,11 @@ ifeq ($(UNIX_BASED), true)
 		override LDLIBS += -framework AppKit -framework UniformTypeIdentifiers
 	else
 		ifeq ($(OS), Linux)
-			override LDFLAGS += -lX11 -lpthread
-			override LDLIBS += -lX11 -lpthread
+			override LDFLAGS += -lX11 -lXrandr -lXinerama -lpthread
+			override LDLIBS += -lX11 -lXrandr -lXinerama -lpthread
 		else
-			override LDFLAGS += -lX11 -lpthread -lc -lkvm
-			override LDLIBS += -lX11 -lpthread -lc -lkvm
+			override LDFLAGS += -lX11 -lXrandr -lXinerama -lpthread -lc -lkvm
+			override LDLIBS += -lX11 -lXrandr -lXinerama -lpthread -lc -lkvm
 		endif
 	endif
 else
