@@ -222,4 +222,9 @@ namespace enigma_user {
     return ::widget_get_canceled();
   }
 
+  void widget_set_locale() {
+    enigma::widget_system_initialize();
+    ::widget_set_locale();
+  }
+
 } // namespace enigma_user
